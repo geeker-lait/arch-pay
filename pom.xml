@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>arch-pay</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>pay-api</module>
+        <module>pay-biz</module>
+        <module>pay-channel</module>
+        <module>pay-core</module>
+        <module>pay-crud</module>
+        <module>pay-rest</module>
+        <module>pay-sdk</module>
+    </modules>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.vaadin.external.google</groupId>
+                    <artifactId>android-json</artifactId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- arch-pay#arch-pay#arch-pay#arch-pay#arch-pay#arch-pay#arch-pay -->
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>pay-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>pay-biz</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>pay-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>pay-crud</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>pay-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>pay-sdk</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>channel-alipay</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>channel-huifu</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>channel-lianlian</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>channel-mfe88</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>channel-weixin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>channel-yeepay</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- arch-pay#arch-pay#arch-pay#arch-pay#arch-pay#arch-pay#arch-pay -->
+
+            <!--arhc-sms#arhc-sms#arhc-sms#arhc-sms#arhc-sms#arhc-sms#arhc-sms#-->
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>sms-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>sms-channel</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>sms-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>sms-crud</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>sms-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!--arhc-sms#arhc-sms#arhc-sms#arhc-sms#arhc-sms#arhc-sms#arhc-sms#-->
+
+            <!-- arch-automate#arch-pay#arch-automate#arch-automate#arch-automate -->
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>automate-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>automate-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>automate-crud</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>automate-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- arch-automate#arch-pay#arch-automate#arch-automate#arch-automate -->
+
+            <!-- arch-form#arch-form#arch-form#arch-form#arch-form#arch-form#arch-form -->
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>form-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>form-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>form-crud</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>form-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- arch-form#arch-form#arch-form#arch-form#arch-form#arch-form#arch-form -->
+
+            <!-- arch-framework#arch-framework#arch-framework#arch-framework#arch-framework# -->
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>framework-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>framework-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>framework-utils</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>framework-beans</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>framework-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>framework-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>framework-spi</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- arch-framework#arch-framework#arch-framework#arch-framework#arch-framework# -->
+
+            <dependency>
+                <artifactId>mq-messaging</artifactId>
+                <groupId>org.arch.projects</groupId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>mq-consumer</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>mq-producer</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>mq-producer-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>mq-consumer-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>auth-sdk</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>auth-jwt</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>auth-rbac</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>auth-sso</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>auth-oauth</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>ums-account</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>ums-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>ums-commons</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>ums-feign-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>ums-member</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>ums-merchant</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>ums-user</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.arch.projects</groupId>
+                <artifactId>ums-conf</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+
+            <!-- auth -->
+            <dependency>
+                <groupId>top.dcenter</groupId>
+                <artifactId>ums-dependencies</artifactId>
+                <version>${dcenter-ums.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jsonwebtoken.version}</version>
+            </dependency>
+
+            <!-- spring#spring#spring#spring#spring#spring#spring#spring -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2020.0.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.4.1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-bom</artifactId>
+                <version>5.4.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.2.3.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>3.2.6</version>
+            </dependency>
+            <!-- spring#spring#spring#spring#spring#spring#spring#spring -->
+
+
+            <!-- apache#apache#apache#apachea#pache#apache#apache#apache-->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>2.0.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.10</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>4.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>4.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>4.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>1.6</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-configuration</groupId>
+                <artifactId>commons-configuration</artifactId>
+                <version>1.10</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.6</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>1.9.4</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>1.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.13</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-digester3</artifactId>
+                <version>3.2</version>
+                <!--<classifier>with-deps</classifier>-->
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>1.20</version>
+            </dependency>
+            <!-- apache#apache#apache#apachea#pache#apache#apache#apache-->
+
+            <!-- commons -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.16</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.73</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.1</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.30</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>io.beanmapper</groupId>
+                <artifactId>beanmapper</artifactId>
+                <version>3.1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>2.10.10</version>
+            </dependency>
+
+
+            <!--google -->
+            <!-- 解决: 未知的枚举常量 javax.annotation.meta.When.MAYBE -->
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>3.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>30.0-jre</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.8.7</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>3.4.1</version>
+            </dependency>
+
+            <!-- other -->
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>1.27</version>
+            </dependency>
+
+
+            <!--Feign-->
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-core</artifactId>
+                <version>10.10.1</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign.form</groupId>
+                <artifactId>feign-form</artifactId>
+                <version>3.8.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign.form</groupId>
+                <artifactId>feign-form-spring</artifactId>
+                <version>3.8.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-httpclient</artifactId>
+                <version>11.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>3.0.0</version>
+            </dependency>
+
+
+            <!-- db mybatis -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>3.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-core</artifactId>
+                <version>3.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-annotation</artifactId>
+                <version>3.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>1.2.10</version>
+            </dependency>
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-core</artifactId>
+                <version>4.2.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>2.1.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>20210307</version>
+            </dependency>
+
+            <!-- redis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>3.14.0</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>4.10.87.ALL</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>2.4.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

@@ -1,0 +1,8 @@
+com\unichain\pay\BankcardPayResponse.class
+com\unichain\pay\BankcardBindResponse.class
+com\unichain\pay\BankcardRepayRequest.class
+com\unichain\pay\BankcardBindVerifyRequest.class
+com\unichain\pay\BankcardRepayResponse.class
+com\unichain\pay\BankcardPayRequest.class
+com\unichain\pay\BankcardBindRequest.class
+com\unichain\pay\BankcardBindVerifyResponse.class

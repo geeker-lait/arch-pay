@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.arch.projects</groupId>
+        <artifactId>pay-channel</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>channel-alipay</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.arch.projects</groupId>
+            <artifactId>pay-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.arch.projects</groupId>
+            <artifactId>framework-beans</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>fastjson</artifactId>
+                    <groupId>com.alibaba</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+    </dependencies>
+</project>

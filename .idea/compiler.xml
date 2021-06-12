@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pay-crud" />
+        <module name="channel-mfe88" />
+        <module name="channel-sharelink" />
+        <module name="channel-huifu" />
+        <module name="pay-core" />
+        <module name="channel-weixin" />
+        <module name="pay-sdk" />
+        <module name="pay-api" />
+        <module name="channel-yeepay" />
+        <module name="pay-rest" />
+        <module name="pay-biz" />
+        <module name="channel-lianlian" />
+        <module name="channel-alipay" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="arch-pay" target="1.8" />
+      <module name="channel-alipay" target="1.8" />
+      <module name="channel-huifu" target="1.8" />
+      <module name="channel-lianlian" target="1.8" />
+      <module name="channel-mfe88" target="1.8" />
+      <module name="channel-sharelink" target="1.8" />
+      <module name="channel-weixin" target="1.8" />
+      <module name="channel-yeepay" target="1.8" />
+      <module name="pay-api" target="1.8" />
+      <module name="pay-biz" target="1.8" />
+      <module name="pay-channel" target="1.8" />
+      <module name="pay-core" target="1.8" />
+      <module name="pay-crud" target="1.8" />
+      <module name="pay-rest" target="1.8" />
+      <module name="pay-sdk" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
