@@ -15,10 +15,6 @@
             <groupId>org.arch.projects</groupId>
             <artifactId>pay-api</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.arch.projects</groupId>
-            <artifactId>framework-core</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
