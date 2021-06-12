@@ -10,11 +10,19 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>pay-rest</artifactId>
     <dependencies>
-
+        <dependency>
+            <groupId>org.arch.projects</groupId>
+            <artifactId>pay-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.arch.projects</groupId>
+            <artifactId>pay-crud</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
         </dependency>
+
 
     </dependencies>
 
