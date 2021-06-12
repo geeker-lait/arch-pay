@@ -8,6 +8,20 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <spring-security.version>5.4.2</spring-security.version>
+        <spring.version>5.2.9.RELEASE</spring.version>
+        <commons-io.version>2.7</commons-io.version>
+        <commons-lang3.version>3.5</commons-lang3.version>
+        <jsonwebtoken.version>0.5.1</jsonwebtoken.version>
+        <guava.version>[24.1.1,)</guava.version>
+        <flowable.version>6.6.0</flowable.version>
+        <dcenter-ums.version>2.2.41</dcenter-ums.version>
+    </properties>
+
     <modules>
         <module>pay-api</module>
         <module>pay-biz</module>
