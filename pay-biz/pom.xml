@@ -11,15 +11,7 @@
     <artifactId>pay-biz</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>org.arch.projects</groupId>
-            <artifactId>pay-rest</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.arch.projects</groupId>
-            <artifactId>pay-core</artifactId>
-        </dependency>
     </dependencies>
 
 </project>

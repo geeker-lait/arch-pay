@@ -11,12 +11,6 @@
     <artifactId>pay-sdk</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>org.arch.projects</groupId>
-            <artifactId>pay-api</artifactId>
-        </dependency>
-
-
 
 
         <dependency>

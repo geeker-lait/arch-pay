@@ -12,37 +12,6 @@
 
     <dependencies>
 
-        <!--<dependency>
-            <groupId>com.huifu.cfca</groupId>
-            <artifactId>cryptokit.jni</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.huifu.cfca</groupId>
-            <artifactId>sadk</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.huifu.cfca</groupId>
-            <artifactId>sansec.swxajce</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.huifu.saturn</groupId>
-            <artifactId>saturn-cfca</artifactId>
-        </dependency>-->
-
-        <!--<dependency>
-           <groupId>com.huifu.cfca</groupId>
-           <artifactId>sadk</artifactId>
-       </dependency>-->
-
-       <!-- <dependency>
-            <groupId>org.jodd</groupId>
-            <artifactId>jodd-http</artifactId>
-        </dependency>-->
-
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
