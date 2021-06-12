@@ -13,21 +13,7 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>com.lianpay.product</groupId>
-            <artifactId>lianpay_common_security</artifactId>
-            <version>0.0.1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/libs/lianpay_common_security-0.0.1.jar</systemPath>
-        </dependency>
 
-        <dependency>
-            <groupId>com.lianpay.product</groupId>
-            <artifactId>lianpay_common_util</artifactId>
-            <version>0.0.1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/libs/lianpay_common_util-0.0.1.jar</systemPath>
-        </dependency>
 
 
         <dependency>

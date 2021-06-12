@@ -41,13 +41,6 @@
         <!--        </dependency>-->
 
 
-        <dependency>
-            <groupId>com.pisgah</groupId>
-            <artifactId>gatewayeg</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/libs/mfe88/cncxApi.jar</systemPath>
-        </dependency>
 
 
     </dependencies>

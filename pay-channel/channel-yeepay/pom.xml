@@ -12,13 +12,7 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>com.yeepay.g3.yop</groupId>
-            <artifactId>yop-java-sdk</artifactId>
-            <version>3.1.1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/libs/yeepay/yop-java-sdk-3.1.1-jdk18.jar</systemPath>
-        </dependency>
+
 
 
     </dependencies>
