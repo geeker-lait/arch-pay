@@ -1,8 +1,8 @@
 package org.arch.pay.rest;
 
 import org.arch.framework.crud.CrudRest;
-import org.arch.pay.api.PayStrategyRequest;
-import org.arch.pay.api.PayStrategySearchDto;
+import org.arch.pay.api.request.PayStrategyRequest;
+import org.arch.pay.api.dto.PayStrategySearchDto;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

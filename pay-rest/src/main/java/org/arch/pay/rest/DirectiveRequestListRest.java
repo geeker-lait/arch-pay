@@ -1,8 +1,8 @@
 package org.arch.pay.rest;
 
 import org.arch.framework.crud.CrudRest;
-import org.arch.pay.api.DirectiveRequestListRequest;
-import org.arch.pay.api.DirectiveRequestListSearchDto;
+import org.arch.pay.api.request.DirectiveRequestListRequest;
+import org.arch.pay.api.dto.DirectiveRequestListSearchDto;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
